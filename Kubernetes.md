@@ -21,3 +21,21 @@
 ### Get detailed information on the master nodes
 
 > kubectl  describe  nodes  master
+
+# Configuration Information
+
+### Display merged kubeconfig settings
+
+> kubectl  config view
+### View the current context
+
+> kubectl  config  current-context
+### Set the context, here kubernetes-admin@kubernetes is the context name
+
+> kubectl config  use-context kubernetes-admin@kubernetes
+### Display clusters defined in the kubeconfig
+
+> kubectl  config get-clusters
+### Describe one or many contexts
+
+> kubectl  config get-contexts
